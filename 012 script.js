@@ -23,11 +23,12 @@
 
 'use strict';
 
-// 1 задание
+// task 1
 
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-console.log(numberOfFilms);
+
+// task 2
 
 let personalMovieDB = {
     count : numberOfFilms,
@@ -36,6 +37,20 @@ let personalMovieDB = {
     genres: [],
     privat: false
 };
+
+// task 3
+
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+      b = prompt("На сколько оцение его?", ""),
+      c = prompt("Один из последних просмотренных фильмов?", ""),
+      d = prompt("На сколько оцение его?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+
 
 
 
