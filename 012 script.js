@@ -45,7 +45,7 @@ const a = prompt("Один из последних просмотренных ф
       c = prompt("Один из последних просмотренных фильмов?", ""),
       d = prompt("На сколько оцение его?", "");
 
-personalMovieDB.movies[a] = b;
+personalMovieDB.movies[a] = b; // добавляем в массив movies ключ a и значение b
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
